@@ -16,17 +16,18 @@ if(isset($_POST['name']) && isset($_POST['tel']) && isset($_POST['company'])) {
     
     try {
         // Configurar o servidor SMTP
+        $mail->CharSet = 'UTF-8';
         $mail->isSMTP();
-        $mail->Host = 'smtp.example.com'; // Servidor SMTP
+        $mail->Host = 'mail.conviktus.co.ao';
         $mail->SMTPAuth = true;
-        $mail->Username = 'seu_email@example.com'; // Seu e-mail
-        $mail->Password = 'sua_senha'; // Sua senha
-        $mail->SMTPSecure = 'tls'; // Tipo de segurança (tls/ssl)
-        $mail->Port = 587; // Porta SMTP
+        $mail->Username = 'alfredo@conviktus.co.ao';
+        $mail->Password = 'RTk{K8_Xz??,';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 465;
         
         // Configurar o remetente e o destinatário
-        $mail->setFrom('seu_email@example.com', 'Seu Nome');
-        $mail->addAddress('destinatario@example.com', 'Nome do Destinatário');
+        $mail->setFrom('geral@conviktus.co.ao', 'Alfreod');
+        $mail->addAddress('alfredochivela2@gmail.com', 'Nome do Destinatário');
         
         // Conteúdo do e-mail
         $mail->isHTML(true);
