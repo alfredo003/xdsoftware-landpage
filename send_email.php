@@ -9,18 +9,18 @@ use PHPMailer\PHPMailer\Exception;
 $mail = new PHPMailer(true);
 
 try {
-    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->CharSet = 'UTF-8';
     $mail->isSMTP();
     $mail->Host = 'mail.conviktus.co.ao';
     $mail->SMTPAuth = true;
     $mail->Username = 'alfredo@conviktus.co.ao';
-    $mail->Password = 'RTk{K8_Xz??,';
+    $mail->Password = 'Ok!agI_c9h~~';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 465;
 
     $mail->setFrom('geral@conviktus.co.ao', 'Atendimento');
-    $mail->addAddress('alfredo@conviktus.co.ao', 'Cesar');
+    $mail->addAddress('alfredochivela3@gmail.com', 'Cesar');
     
     $mail->isHTML(true);                                 
     $mail->Subject = 'Titulo do E-mail';
