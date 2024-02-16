@@ -111,7 +111,7 @@
       </div>
       <div class="form-group">
         <label for="tel">Nº Telefone:</label>
-        <input type="tel" id="tel" name="email"   required>
+        <input type="tel" id="tel" name="tel"   required>
       </div>
       <div class="form-group">
         <label for="company">Nome da Empresa:</label>
