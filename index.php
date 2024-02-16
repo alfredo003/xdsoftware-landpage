@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet"/>
+
+
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="icon" type="image/png" href="assets/icon.png">
     <title>XD Software - Sistema de Gestão</title>
@@ -121,7 +121,8 @@
     </form>
   </div>
 </div>
- 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="assets/script.js"></script>
     <div class="footer__bar">
       Copyright © Conviktus. Todos direitos reservados. | NIF : 5001099310

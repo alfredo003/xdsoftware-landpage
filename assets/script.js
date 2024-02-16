@@ -6,32 +6,34 @@ document.getElementById('open-popup').addEventListener('click', function() {
     document.getElementById('popup').style.display = 'none';
   });
   
-  document.getElementById('submit-btn').addEventListener('click', function() {
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('tel').value;
-  
-      var formData = new FormData();
-      formData.append('name', name);
-      formData.append('tel', email);
-  
-      fetch('process_form.php', {
-          method: 'POST',
-          body: formData
-      })
-      .then(function(response) {
-          if (!response.ok) {
-              throw new Error('Network response was not ok');
-          }
-          return response.text();
-      })
-      .then(function(data) {
-          alert('Formulário enviado com sucesso! Obrigado por se inscrever.');
-          // Limpar os campos do formulário após o envio bem-sucedido
-          document.getElementById('name').value = '';
-          document.getElementById('email').value = '';
-      })
-      .catch(function(error) {
-          console.error('There was a problem with your fetch operation:', error);
+  $(document).ready(function() {
+      $('.submit-btn').click(function(e) {
+          e.preventDefault();
+          
+          var name = $('#name').val();
+          var tel = $('#tel').val();
+          var company = $('#company').val();
+          
+          $.ajax({
+              type: 'POST',
+              url: 'send_email.php', // Caminho para o script PHP que enviará o e-mail
+              data: {
+                  name: name,
+                  tel: tel,
+                  company: company
+              },
+              success: function(response) {
+                  alert('E-mail enviado com sucesso!');
+                  // Limpar o formulário após o envio
+                  $('#name').val('');
+                  $('#tel').val('');
+                  $('#company').val('');
+              },
+              error: function(xhr, status, error) {
+                  alert('Erro ao enviar o e-mail: ' + xhr.responseText);
+              }
+          });
       });
   });
+ 
   
