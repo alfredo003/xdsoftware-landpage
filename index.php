@@ -7,7 +7,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="icon" type="image/png" href="assets/icon.png">
     <title>XD Software - Sistema de Gestão</title>
   </head>
   <body>
@@ -96,7 +97,7 @@
           gestão financeira, passando pela relação com os clientes e muito mais, o XD é a solução definitiva 
           para todas as suas necessidades comerciais.
         </p>
-        <button class="btn">Quero saber mais!</button>
+        <button class="btn" id="open-popup">Quero saber mais!</button>
       </div>
     </section>
     <div id="popup" class="popup">
@@ -123,7 +124,7 @@
  
 <script src="assets/script.js"></script>
     <div class="footer__bar">
-      Copyright © Conviktus. Todos direitos reservados.
+      Copyright © Conviktus. Todos direitos reservados. | NIF : 5001099310
     </div>
   </body>
 </html>
