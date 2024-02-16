@@ -1,0 +1,23 @@
+{
+    "name": "alfredo003/xdsoftware",
+    "description": "",
+    "minimum-stability": "stable",
+    "authors": [
+      {
+        "name": "Alfredo Manuel",
+        "email": "alfrechivela3@gmail.com",
+        "homepage": "https://www.github.com/alfredo003/",
+        "role": "Developer"
+      }
+    ],
+    "config": {
+      "vendor-dir": "vendor"
+    },
+    "require": {
+      "php": "^7.1",
+      "ext-pdo": "^7.1",
+      "phpmailer/phpmailer": "~6.0",
+      "coffeecode/router": "^1.0"
+    }
+  }
+  
