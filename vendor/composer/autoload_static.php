@@ -4,27 +4,95 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7cfa0b219353bedd356c6c413a33e227
+class ComposerStaticInit3b8ff556182631d5c6a87f100e5e321c
 {
+    public static $files = array (
+        'e471bf351add62873bc0289ccd6a937f' => __DIR__ . '/..' . '/league/plates/src/Template/match.php',
+        '152c98af9456eeb8f53697d6a7dfd689' => __DIR__ . '/..' . '/league/plates/src/Extension/Data/data.php',
+        'e20239a76b73b9912f51f0005956d1db' => __DIR__ . '/..' . '/league/plates/src/Extension/Path/path.php',
+        'd513f8e004e152493580ca1917e308ba' => __DIR__ . '/..' . '/league/plates/src/Extension/RenderContext/func.php',
+        '27980683f1626a3fd1405d27b171c0fe' => __DIR__ . '/..' . '/league/plates/src/Extension/RenderContext/render-context.php',
+        'bdc465a053da7f7ddb072631f6d41d45' => __DIR__ . '/..' . '/league/plates/src/Extension/LayoutSections/layout-sections.php',
+        'afa76803f24616d7599be3b7b0846adc' => __DIR__ . '/..' . '/league/plates/src/Extension/Folders/folders.php',
+        '16c5be35e32c6cf916d875518b909210' => __DIR__ . '/..' . '/league/plates/src/Util/util.php',
+        '8ce2cf3dc271bae9b7e34c40110e877f' => __DIR__ . '/../..' . '/source/Boot/Config.php',
+        'fdba21584ede30f6926674f84ea51119' => __DIR__ . '/../..' . '/source/Boot/Helpers.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'WebPConvert\\' => 12,
+        ),
+        'S' => 
+        array (
+            'Source\\' => 7,
+        ),
         'P' => 
         array (
             'PHPMailer\\PHPMailer\\' => 20,
         ),
+        'M' => 
+        array (
+            'MatthiasMullie\\PathConverter\\' => 29,
+            'MatthiasMullie\\Minify\\' => 22,
+        ),
+        'L' => 
+        array (
+            'League\\Plates\\' => 14,
+        ),
+        'I' => 
+        array (
+            'ImageMimeTypeGuesser\\' => 21,
+        ),
         'C' => 
         array (
             'CoffeeCode\\Router\\' => 18,
+            'CoffeeCode\\Optimizer\\' => 21,
+            'CoffeeCode\\Cropper\\' => 19,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'WebPConvert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rosell-dk/webp-convert/src',
+        ),
+        'Source\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/source',
+        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
+        'MatthiasMullie\\PathConverter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/path-converter/src',
+        ),
+        'MatthiasMullie\\Minify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/minify/src',
+        ),
+        'League\\Plates\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/plates/src',
+        ),
+        'ImageMimeTypeGuesser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/rosell-dk/image-mime-type-guesser/src',
+        ),
         'CoffeeCode\\Router\\' => 
         array (
             0 => __DIR__ . '/..' . '/coffeecode/router/src',
+        ),
+        'CoffeeCode\\Optimizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/optimizer/src',
+        ),
+        'CoffeeCode\\Cropper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/cropper/src',
         ),
     );
 
@@ -35,9 +103,9 @@ class ComposerStaticInit7cfa0b219353bedd356c6c413a33e227
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7cfa0b219353bedd356c6c413a33e227::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7cfa0b219353bedd356c6c413a33e227::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit7cfa0b219353bedd356c6c413a33e227::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit3b8ff556182631d5c6a87f100e5e321c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit3b8ff556182631d5c6a87f100e5e321c::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit3b8ff556182631d5c6a87f100e5e321c::$classMap;
 
         }, null, ClassLoader::class);
     }
